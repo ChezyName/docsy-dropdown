@@ -3,12 +3,6 @@
     (not .Site.Params.ui.navbar_translucent_over_cover_disable)
 -}}
 
-<style>
-  .navbar-dropdown {
-    color: green;
-  }
-</style>
-
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark
             {{- if $cover }} td-navbar-cover {{- end }} flex-column flex-md-row td-navbar">
   <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
@@ -28,11 +22,12 @@
     {{- /**/ -}}
   </a>
 
-  <div class="navbar-dropdown" style="border: solid white 2px;">
-    <span>X</span>
-    <span>Y</span>
-    <span>Z</span>
-  </div>
+  {{- /*  If the dropdown param is enabled */ -}}
+  {{- if ne .Site.Params.dropdown.active false }}
+    <div class="navbar-dropdown">
+      <span style="font-weight: bold;">{{.Site.Params.dropdown.title}}</span>
+    </div>
+  {{end}}
 
 
   <div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
