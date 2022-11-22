@@ -1,4 +1,4 @@
-module github.com/google/docsy/dependencies
+module github.com/ChezyName/docsy-dropdown/dependencies
 
 go 1.12
 
