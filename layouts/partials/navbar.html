@@ -24,8 +24,13 @@
 
   {{- /*  If the dropdown param is enabled */ -}}
   {{- if ne .Site.Params.dropdown.active false }}
-    <div class="navbar-dropdown">
+    <div class="navbar-dropdown" style="font-weight: bold;">
       <span style="font-weight: bold;">{{.Site.Params.dropdown.title}}</span>
+
+      {{ range .Site.dopdown.links }}
+      <a href="{{.link}}">{{.title}}</a>
+      {{ end }}
+
     </div>
   {{end}}
 
