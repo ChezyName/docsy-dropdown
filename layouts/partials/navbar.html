@@ -28,7 +28,7 @@
       <span style="font-weight: bold;">{{.Site.Params.dropdown.title}}</span>
 
       {{ range .Site.Params.dropdown.links }}
-        {{ . }}
+        <a href="{{.[1]}}" target="_blank">{{.[0]}}</a>
       {{ end }}
 
     </div>
