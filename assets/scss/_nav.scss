@@ -224,6 +224,6 @@ nav.foldable-nav {
     font-family: $font-awesome-font-name; font-weight: 900; content: "\f0da";
 }
 
-.dropdown-content a:hover {background-color: $primary;}
+.navbar-dropdown-content a:hover {background-color: $primary;}
 
-.dropdown:hover .dropdown-content {display: block;}
+.navbar-dropdown:hover .dropdown-content {display: block;}
