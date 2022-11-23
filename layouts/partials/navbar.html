@@ -27,9 +27,11 @@
     <div class="navbar-dropdown" style="font-weight: bold;">
       <span style="font-weight: bold;">{{.Site.Params.dropdown.title}}</span>
 
-      {{ range .Site.Params.dropdown.links }}
-        <a href="{{ index . 1 }}" target="_blank">{{ index . 0 }}</a>
-      {{ end }}
+      <div class="navbar-dropdown-content">
+        {{ range .Site.Params.dropdown.links }}
+          <a href="{{ index . 1 }}" target="_blank">{{ index . 0 }}</a>
+        {{ end }}
+      </div>
 
     </div>
   {{end}}
