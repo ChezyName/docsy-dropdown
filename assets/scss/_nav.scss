@@ -212,11 +212,11 @@ nav.foldable-nav {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border: 2px solid black;
 }
 
 .navbar-dropdown-content a {
     background-color: transparent;
-    color: $primary;
     font-weight: bold;
     padding: 12px 16px;
     text-decoration: none;
