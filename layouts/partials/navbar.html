@@ -27,8 +27,8 @@
     <div class="navbar-dropdown" style="font-weight: bold;">
       <span style="font-weight: bold;">{{.Site.Params.dropdown.title}}</span>
 
-      {{ range .Site.dopdown.links }}
-        {{.title}}
+      {{ range .Site.Params.dropdown.links }}
+        {{ . }}
       {{ end }}
 
     </div>
